@@ -65,4 +65,4 @@ def get_recipes():
     return jsonify(recipe_data)
 
 if _name_ == "_main_":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
